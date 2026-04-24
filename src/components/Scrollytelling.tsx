@@ -47,7 +47,7 @@ export default function Scrollytelling() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 px-0 md:px-8 h-full items-center">
         <div className="relative h-[40vh] sm:h-[50vh] md:h-[80vh] rounded-none overflow-hidden border border-white/10 group">
           <motion.img 
-            src={import.meta.env.BASE_URL + "41_9d3f1113-78f0-481f-9cd5-3e12d845849b_1800x1800-2050243805.jpg"} 
+            src={"/" + "41_9d3f1113-78f0-481f-9cd5-3e12d845849b_1800x1800-2050243805.jpg"} 
             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
             alt="The Bespoke Process"
           />
