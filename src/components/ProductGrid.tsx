@@ -9,7 +9,7 @@ const PRODUCTS = [
     name: "Heritage Emerald Lush",
     category: "Festive Silk",
     price: "PKR 18,500",
-    image: "/Wash-Wear-Gents-Shalwar-Qameez-GS45-1.webp",
+    image: "Wash-Wear-Gents-Shalwar-Qameez-GS45-1.webp",
     fabric: "Liquid Ammonia Silk",
     color: "Deep Emerald"
   },
@@ -18,7 +18,7 @@ const PRODUCTS = [
     name: "Cyan Sands Giza",
     category: "Lawn Archive",
     price: "PKR 14,200",
-    image: "/Wash-Wear-Gents-Shalwar-Qameez-GS44-1-2025904109.webp",
+    image: "Wash-Wear-Gents-Shalwar-Qameez-GS44-1-2025904109.webp",
     fabric: "Giza Cotton 120s",
     color: "Sky Blue"
   },
@@ -27,7 +27,7 @@ const PRODUCTS = [
     name: "Midnight Ink Structure",
     category: "Bespoke Formal",
     price: "PKR 22,900",
-    image: "/pakistani_gents_shalwar_kameez-2963876879.jpg",
+    image: "pakistani_gents_shalwar_kameez-2963876879.jpg",
     fabric: "Egyptian Twill",
     color: "Shadow Black"
   },
@@ -36,7 +36,7 @@ const PRODUCTS = [
     name: "Marine Command Egyptian",
     category: "Signature Collection",
     price: "PKR 19,800",
-    image: "/7aad2056fb17541456016cf623c6ac70-2904060245.jpg",
+    image: "7aad2056fb17541456016cf623c6ac70-2904060245.jpg",
     fabric: "Supima Cotton",
     color: "Navy Blue"
   },
@@ -45,7 +45,7 @@ const PRODUCTS = [
     name: "Desert Husk Texture",
     category: "Heritage Weave",
     price: "PKR 16,500",
-    image: "/SK-48-1-scaled-1123149132.jpg",
+    image: "SK-48-1-scaled-1123149132.jpg",
     fabric: "Slub Linen",
     color: "Rustic Brown"
   },
@@ -54,7 +54,7 @@ const PRODUCTS = [
     name: "Obsidian Guard Suit",
     category: "Luxury Unstitched",
     price: "PKR 25,000",
-    image: "/MKS-8336-3-1639371118.jpg",
+    image: "MKS-8336-3-1639371118.jpg",
     fabric: "Imperial Wool Blend",
     color: "Jet Black"
   },
@@ -63,7 +63,7 @@ const PRODUCTS = [
     name: "Sandstone Sovereign",
     category: "Daywear Archive",
     price: "PKR 13,500",
-    image: "/235559a993082128adece399fa8d92ac-473599044.jpg",
+    image: "235559a993082128adece399fa8d92ac-473599044.jpg",
     fabric: "Aerated Linen",
     color: "Warm Khaki"
   },
@@ -72,7 +72,7 @@ const PRODUCTS = [
     name: "Regal Amethyst Weave",
     category: "Velvet Couture",
     price: "PKR 32,000",
-    image: "/2f894674bed7377fa07612de9c67759a-2235079211.jpg",
+    image: "2f894674bed7377fa07612de9c67759a-2235079211.jpg",
     fabric: "Micro-Velvet x Silk",
     color: "Royal Purple"
   }
@@ -89,7 +89,7 @@ function ProductCard({ product }: { product: typeof PRODUCTS[0] }) {
         <CardContent className="p-0 relative">
           <div className="aspect-[3/4] overflow-hidden relative">
             <motion.img 
-              src={`${import.meta.env.BASE_URL}${product.image.replace(/^\//, '')}`} 
+              src={import.meta.env.BASE_URL + product.image} 
               alt={product.name}
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />
