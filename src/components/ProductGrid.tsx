@@ -89,7 +89,7 @@ function ProductCard({ product }: { product: typeof PRODUCTS[0] }) {
         <CardContent className="p-0 relative">
           <div className="aspect-[3/4] overflow-hidden relative">
             <motion.img 
-              src={product.image} 
+              src={`${import.meta.env.BASE_URL}${product.image.replace(/^\//, '')}`} 
               alt={product.name}
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />
