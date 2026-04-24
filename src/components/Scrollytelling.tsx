@@ -63,15 +63,6 @@ export default function Scrollytelling() {
               In a world of mass-produced luxury pret, unstitched fabric remains the ultimate investment. It is the only way to achieve a truly bespoke fit that respects your unique silhouette.
             </p>
           </div>
-          
-          <div className="narrative-text absolute inset-0 opacity-0">
-             <h3 className="text-3xl sm:text-6xl md:text-8xl font-serif mb-4 md:mb-8 leading-none">
-              HERITAGE <br/> <span className="italic text-heritage-gold">ENGINEERING</span>
-            </h3>
-            <p className="text-xs sm:text-sm md:text-lg text-white/40 font-mono tracking-widest leading-loose uppercase">
-              We leverage 2026 textile science—Liquid Ammonia Mercerization—to ensure your Shalwar Kameez retains its Egyptian Cotton luster for a lifetime, not just a season.
-            </p>
-          </div>
         </div>
       </div>
     </section>
